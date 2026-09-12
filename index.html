@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Most Useless Button on the Internet</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="darkModeToggle" class="corner-btn" aria-label="Toggle dark mode">🌙</button>
 
+  <main class="wrap">
+    <h1>The Useless Button</h1>
+    <p class="subtitle">Press it. It will not help you. That is the whole point.</p>
+
+    <div class="hud">
+      <div class="stat">
+        <span class="label">Presses</span>
+        <span class="value" id="presses">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Best Ever</span>
+        <span class="value" id="best">0</span>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <button id="uselessBtn" class="useless-btn">Press Me</button>
+    </div>
+
+    <p id="message" class="message">Go on. It's just a button.</p>
+
+    <div class="controls">
+      <button id="resetBtn" class="ghost-btn">↺ Reset</button>
+    </div>
+
+    <p class="hint">There may or may not be a reward for reaching 30 presses.</p>
+  </main>
+
+  <div id="confettiLayer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
